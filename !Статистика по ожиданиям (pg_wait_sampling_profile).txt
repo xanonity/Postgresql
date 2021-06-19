@@ -1,0 +1,12 @@
+# postgresql.conf
+# shared_preload_libraries = 'pg_wait_sampling'
+
+SELECT * FROM pg_wait_sampling_current;
+
+SELECT * FROM pg_wait_sampling_get_current(pid);
+
+SELECT * FROM pg_wait_sampling_history;
+
+SELECT * FROM pg_wait_sampling_profile;
+
+pg_wait_sampling_reset_profile()
